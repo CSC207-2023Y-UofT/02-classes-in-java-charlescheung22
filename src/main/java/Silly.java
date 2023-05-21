@@ -198,14 +198,7 @@ public class Silly implements Comparable<Silly>{
          *                You can get the length of a string by using the
          *                .length() method.
          */
-        // Since integers are primitive, it should be okay to use == here.
-        if (this.name.length() == other.name.length()) {
-            return 0;
-        } else if (this.name.length() > other.name.length()) {
-            return 1;
-        } else {
-            return -1;
-        }
+        return this.name.length() - other.name.length();
     }
 
     /*
